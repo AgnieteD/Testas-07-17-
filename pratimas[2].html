@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <input type="text">
+ <p></p>
+
+
+    <script>
+/*
+2. Sukurkite input (be mygtuko), į kurį įrašius vardą ir nulipus nuo input (t.y. blur event),
+vardas atsiras po apačia, tvarkingame sąraše (su kableliais):
+Pvz.: Petras, Jonas, Mantas, Antanas
+*/
+
+
+
+document.querySelector("input").addEventListener("blur", () => {
+// console.log(document.querySelector("input").value);
+document.querySelector("p").textContent += document.querySelector("input").value + ", ";
+});
+
+
+
+    </script>
+</body>
+</html>
