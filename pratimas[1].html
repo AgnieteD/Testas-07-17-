@@ -23,12 +23,16 @@ L L L L
 
 */
 
-n => {
-
-
-
-    return
-}
+const div = document.querySelector('div')
+  const fn = n => {
+      for (let i = 1; i < n; i++) {
+          div.innerHTML += "L"+ '<br>';
+      }
+      for (let i = 1; i <= n; i++) {
+          div.innerHTML += "L";
+      }
+  }
+  fn(4);
 
 
     </script>
